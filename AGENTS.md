@@ -2,7 +2,7 @@
 
 ## Project
 - Name: `how-to-trash`
-- Stack: Next.js App Router, TypeScript, npm
+- Stack: Next.js App Router, TypeScript, Tailwind CSS, npm
 - Primary language: Korean
 
 ## Goal
@@ -16,11 +16,14 @@
 - Follow App Router conventions and keep server/client boundaries explicit.
 - Do not add new dependencies unless clearly necessary.
 - Reuse existing code before introducing abstractions.
+- Keep style definitions and UI components in separate files when introducing reusable patterns.
 - Check the installed Next.js docs in `node_modules/next/dist/docs/` if framework behavior is uncertain.
 
 ## UI Rules
 - Mobile-first.
 - Korean-first copy.
+- Prefer Tailwind utility classes for styling.
+- Use `cn` from `src/lib/utils.ts` when conditional class composition is needed.
 - Prioritize clarity over decoration.
 - Avoid overengineering animation, state, or design system work during MVP.
 
