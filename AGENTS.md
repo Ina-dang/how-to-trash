@@ -17,6 +17,7 @@
 - Do not add new dependencies unless clearly necessary.
 - Reuse existing code before introducing abstractions.
 - Keep style definitions and UI components in separate files when introducing reusable patterns.
+- Keep component-specific styles next to the component in `*.style.ts` files and prefer `cva` for reusable class definitions.
 - Check the installed Next.js docs in `node_modules/next/dist/docs/` if framework behavior is uncertain.
 
 ## UI Rules
