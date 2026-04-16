@@ -1,3 +1,5 @@
+import KakaoMap from '@/components/map/KakaoMap';
+
 export default function Home() {
   return (
     <main className='p-6'>
@@ -6,6 +8,8 @@ export default function Home() {
       <p className='mb-4'>
         지도에서 지역을 선택하면 배출 기준을 볼 수 있어요!!
       </p>
+
+      <KakaoMap />
     </main>
   );
 }
