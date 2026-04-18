@@ -4,6 +4,10 @@ import { Geist, Geist_Mono } from 'next/font/google';
 
 import type { Metadata } from 'next';
 
+import { cn } from '@/lib/utils';
+
+import { rootLayoutBody, rootLayoutHtml } from './layout.style';
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -25,8 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko' className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className='font-sans text-[var(--foreground)] antialiased'>
+    <html
+      lang='ko'
+      className={cn(rootLayoutHtml(), geistSans.variable, geistMono.variable)}
+    >
+      <body className={rootLayoutBody()}>
         {children}
       </body>
     </html>
