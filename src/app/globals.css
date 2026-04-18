@@ -4,12 +4,18 @@
 @source "../**/*.tsx";
 @theme {
   --font-sans: 'Goorm Sans', ui-sans-serif, system-ui, sans-serif;
+  --color-app-background: #fff;
+  --color-app-foreground: #064635;
+  --color-app-muted: #468432;
+  --color-app-line: #519259;
+  --color-app-surface: #fff;
+  --color-app-surface-soft: #f3f8f1;
 }
 
 @layer base {
   :root {
-    --background: #fff;
-    --foreground: #18230f;
+    --background: var(--color-app-background);
+    --foreground: var(--color-app-foreground);
   }
 
   html {
@@ -18,26 +24,30 @@
 
   html,
   body {
-    max-width: 100vw;
     overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
     min-height: 100%;
-    color: var(--foreground);
     background: var(--background);
+    color: var(--foreground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  p {
+    color: #222;
   }
 }
