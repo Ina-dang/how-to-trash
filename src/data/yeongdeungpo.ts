@@ -1,7 +1,10 @@
-// src/data/yeongdeungpo.ts
-
 export const wasteGuide = {
+  regionKey: 'yeongdeungpo',
   region: '영등포구',
+  color: {
+    base: '#2563eb',
+    hover: '#1d4ed8',
+  },
   updatedAt: '2026-04-16',
   categories: [
     {
@@ -23,4 +26,4 @@ export const wasteGuide = {
       place: '분리수거함',
     },
   ],
-};
+} as const;
