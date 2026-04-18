@@ -1,9 +1,14 @@
+@import url('https://statics.goorm.io/fonts/GoormSans/v1.0.0/GoormSans.min.css');
 @import 'tailwindcss';
 @source "../**/*.ts";
+@source "../**/*.tsx";
+@theme {
+  --font-sans: 'Goorm Sans', ui-sans-serif, system-ui, sans-serif;
+}
 
 @layer base {
   :root {
-    --background: #f5f3ec;
+    --background: #fff;
     --foreground: #18230f;
   }
 
